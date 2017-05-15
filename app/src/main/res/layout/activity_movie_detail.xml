@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="madri.me.movixter.activity.MovieDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_poster"
+        android:contentDescription="@string/movie_image_content_description"
+        android:padding="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_title"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:id="@+id/movie_title"
+        android:layout_below="@+id/movie_poster"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/movie_title"
+        android:id="@+id/movie_release_date_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/release_date"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/movie_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="22sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/movie_release_date_layout"
+        android:id="@+id/vote_avg_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avg_vote"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:id="@+id/avg_vote"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/plot_description"
+        android:padding="20dp"
+        android:id="@+id/plot_description_title"
+        android:layout_below="@+id/vote_avg_layout"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/plot_description"
+            android:padding="20dp"
+            android:textSize="22sp"
+            android:layout_below="@id/plot_description_title"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1f000000"
+        android:id="@+id/progress_bar_layout">
+
+        <ProgressBar
+            android:id="@+id/progress_bar_load_movie_detail"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

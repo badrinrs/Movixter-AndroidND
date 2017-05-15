@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Movixter</string>
+    <string name="movie_image_content_description">Movie Image</string>
+
+    <string name="tmdb_api_key"></string>
+    <string name="movie_title">Movie Title</string>
+    <string name="release_date">Release Date:</string>
+    <string name="avg_vote">Avg Vote:</string>
+    <string name="plot_description">Plot Description:</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated">top_rated</string>
+    <string name="popular">popular</string>
+    <string name="movie_key">movie</string>
+    <string name="movie_type_switch">Movie Type</string>
+</resources>
